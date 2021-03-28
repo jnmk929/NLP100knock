@@ -11,7 +11,7 @@ with open(rfile,mode='r',encoding='utf_8') as f:
 
 for i,line in enumerate(list):
     if i >= len(list)-n:
-        print(''.join(line.replace('\n','')))
+        print(line,end='')
 
 
 #他の回答
