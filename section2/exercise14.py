@@ -7,7 +7,7 @@ rfile = './hightemp.txt'
 with open(rfile,mode='r',encoding='utf_8') as f:
     for i,line in enumerate(f):
         if i < n:
-            print(line)      #rstrip()で無駄を省いてもいいかも
+            print(line,end="")      #rstrip()で無駄を省いてもいいかも
 
 
 #他の回答
