@@ -12,6 +12,9 @@ with open(rfile,mode='r',encoding='utf_8') as f:
             pre.append(line[0])
 print(pre)
 
+#コマンド処理
+#split -n 3 hightemp.txt
+
 #他の回答
 #配列か集合型かの違い
 #fname = 'hightemp.txt'
