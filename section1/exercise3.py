@@ -6,7 +6,8 @@ str = 'Now I need a drink, alcoholic of course, after the heavy lectures involvi
 list = str.split(' ')
 result = []
 for word in list:
-    word = word.strip(",.")
+    #word = word.strip(",.")
+    word = word.replace(',','').replace('.','')
     result.append(len(word))
 print(result)
 
