@@ -1,14 +1,19 @@
 #10. 行数のカウント
 #行数をカウントせよ．確認にはwcコマンドを用いよ．
 
+line = []
 with open('./hightemp.txt',mode='r',encoding='utf_8') as f:
-    r = f.read()
+    for l in f:
+        line.append(l.replace('\n',''))
 
-count = 0
-for moji in r:
-    if moji == '\n':
-        count += 1
-print(count)
+print(line)
+print(len(line))
+
+#count = 0
+#for moji in r:
+#    if moji == '\n':
+#        count += 1
+#print(count)
 
 #他の回答 with の中で 行で読み込む
 '''
