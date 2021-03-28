@@ -4,7 +4,7 @@
 
 col1 = 'col1.txt'
 col2 = 'col2.txt'
-marge = 'marge.txt'
+marge = 'merge.txt'
 with open(col1,'r',encoding='utf_8') as f1, open(col2,'r',encoding='utf_8') as f2, open(marge,'w',encoding='utf_8') as fw:
     for (c1,c2) in zip(f1,f2):
         fw.write(c1.replace('\n','')+'\t'+c2)   #rstrip()がわかりやすい 空白文字の除去
