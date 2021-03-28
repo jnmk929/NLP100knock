@@ -8,15 +8,13 @@
 str = 'Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can.'
 list = str.split(' ')
 one = [1,5,6,7,8,9,15,16,19]
-count = 1
 result = {}
-for word in list:
-    word = word.strip(',.')
-    if count in one:
-        result[word[0]] = count
+for i,word in enumerate(list):
+    word = word.replace(',','').replace('.','')
+    if i+1 in one:
+        result[word[0]] = i+1
     else:
-        result[word[0:2]] = count
-    count += 1
+        result[word[:2]] = i+1
 print(result)
 
 #他の解答
