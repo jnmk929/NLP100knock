@@ -6,7 +6,8 @@
 x = 12
 y = '気温'
 z = 22.4
-print(x,'時の',y,'は',z)
+#print(x,'時の',y,'は',z)
+print('{}時の{}は{}'.format(x,y,z))
 
 #他の回答 フォーマット
 #print('{hour}時の{target}は{value}'.format(hour=x,target=y,value=z))
